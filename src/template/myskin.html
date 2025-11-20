@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Personalised Skincare Routine</title>
+    <link rel="stylesheet" href="style/myskin.css">
+    <script src="static/myskin.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<h1>Skin Analysis</h1>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <a href="myskin.html" class="nav_link nav_link_active">
+                <i class="material-icons nav_icon">mood</i>
+                <span class="nav_text">My Skin</span>                
+            </a>
+            <a href="products.html" class="nav_link">
+                <i class="material-icons nav_icon">inventory</i>
+                <span class="nav_text">Products</span>                
+            </a>
+            <a href="routines.html" class="nav_link">
+                <i class="material-icons nav_icon">schedule</i>
+                <span class="nav_text">Routines</span>                
+            </a>
+        </ul>
+    </nav>
+
+    <div class="skinAnalysis">
+        <div class="quiz-container">
+            <div id="question" class="question"></div>
+            <div id="options" class="options"></div>
+            <button class="button" id="back">Back</button>
+            <button class="button" id="next">Next</button>
+        </div>
+        
+        <div id="result" class="result" style="display: none;"></div>
+        <button id="redo">Redo Questionnaire</button>
+
+        <button id="predefinedRoutinesBtn" class="hidden">Check Out Your Routines!</button>
+
+</body>
+
+</html>

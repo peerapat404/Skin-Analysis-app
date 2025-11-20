@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Personalised Skincare Routine</title>
+    <link rel="stylesheet" href="style/routine_details.css">
+    <script type="module" src="static/routine_details.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+</head>
+
+<body>
+    <a id="backToRoutines" href="routines.html">
+        <i class="material-icons nav_icon">arrow_back</i>
+    </a>
+
+    <nav class="nav">
+        <ul>
+            <a href="myskin.html" class="nav_link">
+                <i class="material-icons nav_icon">mood</i>
+                <span class="nav_text">My Skin</span>                
+            </a>
+            <a href="products.html" class="nav_link">
+                <i class="material-icons nav_icon">inventory</i>
+                <span class="nav_text">Products</span>                
+            </a>
+            <a href="routines.html" class="nav_link nav_link_active">
+                <i class="material-icons nav_icon">schedule</i>
+                <span class="nav_text">Routines</span>                
+            </a>
+        </ul>
+    </nav>
+
+    <div class="routineDetail">
+        
+        <h1 class="routineName">Routine name</h1>
+        <hr/>
+        <div>
+            <h2 id="product" >Products</h2>
+            <button id="showProductForm">Add Product</button>
+        </div>
+
+        <div id="productListContainer">
+            <ul id="productList"></ul>
+        </div>
+    </div>
+
+    <div id="addProductForm" class="hidden">
+        <input type="search" id="searchProducts" placeholder="Search products">
+
+        <select id="productTypeSelect"></select>
+        <div class="productContainer">
+            <ul class="listOfProducts"></ul>
+        </div>
+        
+        <div class="buttonContainer">
+            <button id="closeProductForm">Close</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
